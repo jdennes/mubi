@@ -1,3 +1,3 @@
 # mubi
 
-Go library to do things with https://mubi.com/
+Do things with https://mubi.com/
