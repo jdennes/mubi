@@ -49,5 +49,9 @@ func main() {
 		log.Fatal(jsonErr)
 	}
 
-	fmt.Printf("%#v", ratings)
+	for _, rating := range ratings {
+		fmt.Println("Film:", rating.Film.Title)
+		fmt.Println("Rating:", rating.Overall)
+		fmt.Println("-----")
+	}
 }
