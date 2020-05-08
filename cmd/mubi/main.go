@@ -7,21 +7,9 @@ import (
 	"log"
 	"net/http"
 	"time"
+
+  "github.com/jdennes/mubi"
 )
-
-type Film struct {
-	Title        string `json:title`
-	CanonicalUrl string `json:"canonical_url"`
-}
-
-type Rating struct {
-	Overall int `json:"overall"`
-	Film    Film
-}
-
-type Ratings struct {
-	Collection []Rating
-}
 
 func main() {
 	userId := 7995037
@@ -44,7 +32,7 @@ func main() {
 		log.Fatal(readErr)
 	}
 
-	ratings := make([]Rating, 0)
+	ratings := make([]mubi.Rating, 0)
 	jsonErr := json.Unmarshal(body, &ratings)
 	if jsonErr != nil {
 		log.Fatal(jsonErr)
