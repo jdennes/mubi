@@ -10,7 +10,8 @@ import (
 )
 
 type Film struct {
-	Title string `json:title`
+	Title        string `json:title`
+	CanonicalUrl string `json:"canonical_url"`
 }
 
 type Rating struct {
@@ -50,8 +51,8 @@ func main() {
 	}
 
 	for _, rating := range ratings {
-		fmt.Println("Film:", rating.Film.Title)
-		fmt.Println("Rating:", rating.Overall)
+		fmt.Printf("%s: %s\n", rating.Film.Title, rating.Film.CanonicalUrl)
+		fmt.Println("Rating: ", rating.Overall)
 		fmt.Println("-----")
 	}
 }
