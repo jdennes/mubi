@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"time"
 )
 
 type Rating struct {
@@ -15,18 +14,19 @@ type Rating struct {
 	Film      Film
 }
 
-func GetRatings(userId int64) []Rating {
+type RatingsAPI struct {
+	Client *http.Client
+}
+
+func (api *RatingsAPI) GetRatings(userId int64) []Rating {
 	url := fmt.Sprintf("https://mubi.com/services/api/ratings?user_id=%d", userId)
 
-	client := http.Client{
-		Timeout: time.Second * 5,
-	}
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
 	req.Header.Set("User-Agent", "jdennes/mubi")
-	res, getErr := client.Do(req)
+	res, getErr := api.Client.Do(req)
 	if getErr != nil {
 		log.Fatal(getErr)
 	}

@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/jdennes/mubi"
+	"net/http"
 	"os"
 	"time"
 )
@@ -17,10 +18,15 @@ func main() {
 		os.Exit(1)
 	}
 
+	client := http.Client{
+		Timeout: time.Second * 5,
+	}
+
 	switch os.Args[1] {
 	case "ratings":
 		ratingsCmd.Parse(os.Args[2:])
-		ratings := mubi.GetRatings(*userId)
+		ratingsApi := mubi.RatingsAPI{&client}
+		ratings := ratingsApi.GetRatings(*userId)
 		for _, rating := range ratings {
 			fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
 			when := time.Unix(rating.Timestamp, 0)
