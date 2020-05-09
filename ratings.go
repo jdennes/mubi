@@ -10,8 +10,9 @@ import (
 )
 
 type Rating struct {
-	Overall int `json:"overall"`
-	Film    Film
+	Overall   int   `json:"overall"`
+	Timestamp int64 `json:"updated_at"`
+	Film      Film
 }
 
 func GetRatings(userId int64) []Rating {
