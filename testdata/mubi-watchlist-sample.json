@@ -1,0 +1,60 @@
+[
+  {
+    "id": 12165474,
+    "film_id": 927,
+    "created_at": 1560031570,
+    "film": {
+      "id": 927,
+      "title": "Fireworks",
+      "stills": {
+        "large": "https://assets.mubicdn.net/images/film/927/image-w1280.jpg?1581436826",
+        "medium": "https://assets.mubicdn.net/images/film/927/image-w384.jpg?1581436826",
+        "small": "https://assets.mubicdn.net/images/film/927/image-w128.jpg?1581436826",
+        "square": "https://assets.mubicdn.net/images/film/927/image-w140.jpg?1581436826"
+      },
+      "still_url": "https://images.mubicdn.net/images/film/927/cache-8464-1581436826/image-w1280.jpg",
+      "canonical_url": "http://mubi.com/films/fireworks",
+      "watch_url": "/films/fireworks/prescreen",
+      "year": 1997,
+      "popularity": 958,
+      "title_locale": "en",
+      "still_average_colour": "A9B5CC",
+      "directors": [
+        {
+          "id": 140,
+          "name": "Takeshi Kitano",
+          "canonical_url": "http://mubi.com/cast/takeshi-kitano"
+        }
+      ]
+    }
+  },
+  {
+    "id": 12160821,
+    "film_id": 497,
+    "created_at": 1559768765,
+    "film": {
+      "id": 497,
+      "title": "The Intruder",
+      "stills": {
+        "large": "https://assets.mubicdn.net/images/film/497/image-w1280.jpg?1548594021",
+        "medium": "https://assets.mubicdn.net/images/film/497/image-w384.jpg?1548594021",
+        "small": "https://assets.mubicdn.net/images/film/497/image-w128.jpg?1548594021",
+        "square": "https://assets.mubicdn.net/images/film/497/image-w140.jpg?1548594021"
+      },
+      "still_url": "https://images.mubicdn.net/images/film/497/cache-8178-1548594021/image-w1280.jpg",
+      "canonical_url": "http://mubi.com/films/the-intruder",
+      "watch_url": "/films/the-intruder/prescreen",
+      "year": 2004,
+      "popularity": 226,
+      "title_locale": "en",
+      "still_average_colour": "150505",
+      "directors": [
+        {
+          "id": 463,
+          "name": "Claire Denis",
+          "canonical_url": "http://mubi.com/cast/claire-denis"
+        }
+      ]
+    }
+  }
+]

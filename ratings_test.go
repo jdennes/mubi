@@ -7,21 +7,6 @@ import (
 	"testing"
 )
 
-// Uses example JSON responses as fixtures from the testdata directory and
-// replaces Transport on http.Client to avoid real HTTP requests.
-
-type RoundTripFunc func(req *http.Request) *http.Response
-
-func (f RoundTripFunc) RoundTrip(req *http.Request) (*http.Response, error) {
-	return f(req), nil
-}
-
-func NewTestClient(fn RoundTripFunc) *http.Client {
-	return &http.Client{
-		Transport: RoundTripFunc(fn),
-	}
-}
-
 func TestGetRatings(t *testing.T) {
 	client := NewTestClient(func(req *http.Request) *http.Response {
 		file, _ := os.Open("testdata/mubi-ratings-sample.json")
