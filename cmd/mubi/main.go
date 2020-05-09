@@ -11,7 +11,9 @@ import (
 
 func main() {
 	ratingsCmd := flag.NewFlagSet("ratings", flag.ExitOnError)
-	userId := ratingsCmd.Int64("userid", 0, "Mubi.com user ID")
+	ratingsUserId := ratingsCmd.Int64("userid", 0, "Mubi.com user ID")
+	watchlistCmd := flag.NewFlagSet("watchlist", flag.ExitOnError)
+	watchlistUserId := watchlistCmd.Int64("userid", 0, "Mubi.com user ID")
 
 	if len(os.Args) < 2 {
 		fmt.Println("no subcommand provided")
@@ -26,11 +28,21 @@ func main() {
 	case "ratings":
 		ratingsCmd.Parse(os.Args[2:])
 		ratingsApi := mubi.RatingsAPI{&client}
-		ratings := ratingsApi.GetRatings(*userId)
+		ratings := ratingsApi.GetRatings(*ratingsUserId)
 		for _, rating := range ratings {
 			fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
 			when := time.Unix(rating.Timestamp, 0)
 			fmt.Printf("Rated %d stars on %s\n", rating.Overall, when)
+			fmt.Printf("-----\n")
+		}
+	case "watchlist":
+		watchlistCmd.Parse(os.Args[2:])
+		watchlistApi := mubi.WatchlistAPI{&client}
+		watchlist := watchlistApi.GetWatchlist(*watchlistUserId)
+		for _, item := range watchlist {
+			fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
+			when := time.Unix(item.Timestamp, 0)
+			fmt.Printf("Added to watchlist on %s\n", when)
 			fmt.Printf("-----\n")
 		}
 
