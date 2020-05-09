@@ -1,0 +1,96 @@
+[
+  {
+    "id": 20065214,
+    "body": "",
+    "user_id": 7995037,
+    "film_id": 391,
+    "updated_at": 1588527434,
+    "like_count": 0,
+    "comment_count": 0,
+    "canonical_url": "http://mubi.com/films/fallen-angels/ratings/20065214",
+    "overall": 4,
+    "film": {
+      "id": 391,
+      "title": "Fallen Angels",
+      "stills": {
+        "large": "https://assets.mubicdn.net/images/film/391/image-w1280.jpg?1588597327",
+        "medium": "https://assets.mubicdn.net/images/film/391/image-w384.jpg?1588597327",
+        "small": "https://assets.mubicdn.net/images/film/391/image-w128.jpg?1588597327",
+        "square": "https://assets.mubicdn.net/images/film/391/image-w140.jpg?1588597327"
+      },
+      "still_url": "https://images.mubicdn.net/images/film/391/cache-25588-1588597327/image-w1280.jpg",
+      "canonical_url": "http://mubi.com/films/fallen-angels",
+      "watch_url": "/films/fallen-angels/prescreen",
+      "year": 1995,
+      "popularity": 1436,
+      "title_locale": "en",
+      "still_average_colour": "080D09",
+      "directors": [
+        {
+          "id": 1700,
+          "name": "Wong Kar-wai",
+          "canonical_url": "http://mubi.com/cast/wong-kar-wai"
+        }
+      ]
+    },
+    "user": {
+      "id": 7995037,
+      "name": "jdennes",
+      "canonical_url": "http://mubi.com/users/7995037",
+      "avatar_url": "https://assets.mubicdn.net/images/avatars/113982/images-w150.jpg?1523900231",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/80119/images-small.jpg?1535047013",
+      "has_payment_method": true,
+      "eligible_for_trial": true,
+      "trialist": false
+    }
+  },
+  {
+    "id": 19954347,
+    "body": "",
+    "user_id": 7995037,
+    "film_id": 2344,
+    "updated_at": 1587766827,
+    "like_count": 0,
+    "comment_count": 0,
+    "canonical_url": "http://mubi.com/films/little-odessa/ratings/19954347",
+    "overall": 4,
+    "film": {
+      "id": 2344,
+      "title": "Little Odessa",
+      "stills": {
+        "large": "https://assets.mubicdn.net/images/film/2344/image-w1280.jpg?1548820801",
+        "medium": "https://assets.mubicdn.net/images/film/2344/image-w384.jpg?1548820801",
+        "small": "https://assets.mubicdn.net/images/film/2344/image-w128.jpg?1548820801",
+        "square": "https://assets.mubicdn.net/images/film/2344/image-w140.jpg?1548820801"
+      },
+      "still_url": "https://images.mubicdn.net/images/film/2344/cache-26895-1548820801/image-w1280.jpg",
+      "canonical_url": "http://mubi.com/films/little-odessa",
+      "watch_url": "/films/little-odessa/prescreen",
+      "year": 1994,
+      "popularity": 110,
+      "title_locale": "en",
+      "still_average_colour": "0F0B07",
+      "directors": [
+        {
+          "id": 15365,
+          "name": "James Gray",
+          "canonical_url": "http://mubi.com/cast/james-gray"
+        }
+      ]
+    },
+    "user": {
+      "id": 7995037,
+      "name": "jdennes",
+      "canonical_url": "http://mubi.com/users/7995037",
+      "avatar_url": "https://assets.mubicdn.net/images/avatars/113982/images-w150.jpg?1523900231",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/80119/images-small.jpg?1535047013",
+      "has_payment_method": true,
+      "eligible_for_trial": true,
+      "trialist": false
+    }
+  }
+]
