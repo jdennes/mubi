@@ -13,11 +13,7 @@ type WatchlistItem struct {
 	Film      Film
 }
 
-type WatchlistAPI struct {
-	Client *http.Client
-}
-
-func (api *WatchlistAPI) GetWatchlist(userId int64) []WatchlistItem {
+func (api *MubiAPI) GetWatchlist(userId int64) []WatchlistItem {
 	url := fmt.Sprintf("https://mubi.com/services/api/wishes?user_id=%d", userId)
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)

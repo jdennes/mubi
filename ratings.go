@@ -14,11 +14,7 @@ type Rating struct {
 	Film      Film
 }
 
-type RatingsAPI struct {
-	Client *http.Client
-}
-
-func (api *RatingsAPI) GetRatings(userId int64) []Rating {
+func (api *MubiAPI) GetRatings(userId int64) []Rating {
 	url := fmt.Sprintf("https://mubi.com/services/api/ratings?user_id=%d", userId)
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)

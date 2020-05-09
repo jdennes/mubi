@@ -17,8 +17,8 @@ func TestGetWatchlist(t *testing.T) {
 		}
 	})
 
-	watchlistApi := WatchlistAPI{client}
-	watchlist := watchlistApi.GetWatchlist(7995037)
+	api := MubiAPI{client}
+	watchlist := api.GetWatchlist(7995037)
 
 	if len(watchlist) != 2 {
 		t.Errorf("Number of watchlist items was incorrect. Got: %d, expected: %d.", len(watchlist), 2)
