@@ -22,9 +22,9 @@ func main() {
 		ratingsCmd.Parse(os.Args[2:])
 		ratings := mubi.GetRatings(*userId)
 		for _, rating := range ratings {
-			fmt.Printf("%s: %s\n", rating.Film.Title, rating.Film.CanonicalUrl)
+			fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
 			when := time.Unix(rating.Timestamp, 0)
-			fmt.Printf("Rating: %d stars on %s\n", rating.Overall, when)
+			fmt.Printf("Rated %d stars on %s\n", rating.Overall, when)
 			fmt.Printf("-----\n")
 		}
 
