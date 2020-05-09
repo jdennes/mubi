@@ -28,25 +28,32 @@ func main() {
 	switch os.Args[1] {
 	case "ratings":
 		ratingsCmd.Parse(os.Args[2:])
-		ratings := api.GetRatings(*ratingsUserId)
-		for _, rating := range ratings {
-			fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
-			when := time.Unix(rating.Timestamp, 0)
-			fmt.Printf("Rated %d stars on %s\n", rating.Overall, when)
-			fmt.Printf("-----\n")
-		}
+		printRatings(api, *ratingsUserId)
 	case "watchlist":
 		watchlistCmd.Parse(os.Args[2:])
-		watchlist := api.GetWatchlist(*watchlistUserId)
-		for _, item := range watchlist {
-			fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
-			when := time.Unix(item.Timestamp, 0)
-			fmt.Printf("Added to watchlist on %s\n", when)
-			fmt.Printf("-----\n")
-		}
-
+		printWatchlist(api, *watchlistUserId)
 	default:
 		fmt.Println("unexpected subcommand provided")
 		os.Exit(1)
+	}
+}
+
+func printRatings(api mubi.MubiAPI, userId int64) {
+	ratings := api.GetRatings(userId)
+	for _, rating := range ratings {
+		fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
+		when := time.Unix(rating.Timestamp, 0)
+		fmt.Printf("Rated %d stars on %s\n", rating.Overall, when)
+		fmt.Printf("-----\n")
+	}
+}
+
+func printWatchlist(api mubi.MubiAPI, userId int64) {
+	watchlist := api.GetWatchlist(userId)
+	for _, item := range watchlist {
+		fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
+		when := time.Unix(item.Timestamp, 0)
+		fmt.Printf("Added to watchlist on %s\n", when)
+		fmt.Printf("-----\n")
 	}
 }
