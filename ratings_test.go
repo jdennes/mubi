@@ -36,6 +36,6 @@ func TestGetRatings(t *testing.T) {
 	ratings := ratingsApi.GetRatings(7995037)
 
 	if len(ratings) != 2 {
-		t.Errorf("Ratings length was incorrect. Got: %d, expected: %d.", len(ratings), 2)
+		t.Errorf("Number of ratings was incorrect. Got: %d, expected: %d.", len(ratings), 2)
 	}
 }
