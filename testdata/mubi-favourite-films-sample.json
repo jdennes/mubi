@@ -1,0 +1,94 @@
+[
+  {
+    "id": 11233965,
+    "fan_id": 7995037,
+    "fannable_id": 116,
+    "fannable_type": "Film",
+    "created_at": 1554028385,
+    "fannable": {
+      "type": "film",
+      "film": {
+        "id": 116,
+        "title": "4 Months, 3 Weeks and 2 Days",
+        "stills": {
+          "large": "https://assets.mubicdn.net/images/film/116/image-w1280.jpg?1559059202",
+          "medium": "https://assets.mubicdn.net/images/film/116/image-w384.jpg?1559059202",
+          "small": "https://assets.mubicdn.net/images/film/116/image-w128.jpg?1559059202",
+          "square": "https://assets.mubicdn.net/images/film/116/image-w140.jpg?1559059202"
+        },
+        "still_url": "https://images.mubicdn.net/images/film/116/cache-7986-1559059202/image-w1280.jpg",
+        "canonical_url": "http://mubi.com/films/4-months-3-weeks-and-2-days",
+        "watch_url": "/films/4-months-3-weeks-and-2-days/prescreen",
+        "year": 2007,
+        "popularity": 1836,
+        "title_locale": "en",
+        "still_average_colour": "634D46",
+        "directors": [
+          {
+            "id": 962,
+            "name": "Cristian Mungiu",
+            "canonical_url": "http://mubi.com/cast/cristian-mungiu"
+          }
+        ]
+      }
+    },
+    "fan": {
+      "id": 7995037,
+      "name": "jdennes",
+      "canonical_url": "http://mubi.com/users/7995037",
+      "avatar_url": "https://assets.mubicdn.net/images/avatars/113982/images-w150.jpg?1523900231",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/80119/images-small.jpg?1535047013",
+      "has_payment_method": true,
+      "eligible_for_trial": true,
+      "trialist": false
+    }
+  },
+  {
+    "id": 9672141,
+    "fan_id": 7995037,
+    "fannable_id": 30394,
+    "fannable_type": "Film",
+    "created_at": 1484333644,
+    "fannable": {
+      "type": "film",
+      "film": {
+        "id": 30394,
+        "title": "Herr Lehmann",
+        "stills": {
+          "large": "https://assets.mubicdn.net/images/film/30394/image-w1280.jpg?1445887434",
+          "medium": "https://assets.mubicdn.net/images/film/30394/image-w384.jpg?1445887434",
+          "small": "https://assets.mubicdn.net/images/film/30394/image-w128.jpg?1445887434",
+          "square": "https://assets.mubicdn.net/images/film/30394/image-w140.jpg?1445887434"
+        },
+        "still_url": "https://images.mubicdn.net/images/film/30394/cache-29181-1445887434/image-w1280.jpg",
+        "canonical_url": "http://mubi.com/films/herr-lehmann",
+        "watch_url": "/films/herr-lehmann/prescreen",
+        "year": 2003,
+        "popularity": 12,
+        "title_locale": "en",
+        "still_average_colour": "8999A8",
+        "directors": [
+          {
+            "id": 29467,
+            "name": "Leander Haußmann",
+            "canonical_url": "http://mubi.com/cast/leander-haussmann"
+          }
+        ]
+      }
+    },
+    "fan": {
+      "id": 7995037,
+      "name": "jdennes",
+      "canonical_url": "http://mubi.com/users/7995037",
+      "avatar_url": "https://assets.mubicdn.net/images/avatars/113982/images-w150.jpg?1523900231",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/80119/images-small.jpg?1535047013",
+      "has_payment_method": true,
+      "eligible_for_trial": true,
+      "trialist": false
+    }
+  }
+]
