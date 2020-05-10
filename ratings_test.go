@@ -23,4 +23,18 @@ func TestGetRatings(t *testing.T) {
 	if len(ratings) != 2 {
 		t.Errorf("Number of ratings was incorrect. Got: %d, expected: %d.", len(ratings), 2)
 	}
+
+	if ratings[0].Film.Title != "Fallen Angels" {
+		t.Errorf("First film title in ratings was incorrect. Got: %s, expected: %s.", ratings[0].Film.Title, "Fallen Angels")
+	}
+	if ratings[0].Overall != 4 {
+		t.Errorf("First rating was incorrect. Got: %d, expected: %d.", ratings[0].Overall, 4)
+	}
+
+	if ratings[1].Film.Title != "Little Odessa" {
+		t.Errorf("Second film title in ratings was incorrect. Got: %s, expected: %s.", ratings[1].Film.Title, "Little Odessa")
+	}
+	if ratings[1].Overall != 4 {
+		t.Errorf("Second rating was incorrect. Got: %d, expected: %d.", ratings[1].Overall, 4)
+	}
 }
