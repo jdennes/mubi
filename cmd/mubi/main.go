@@ -14,6 +14,8 @@ func main() {
 	ratingsUserId := ratingsCmd.Int64("userid", 0, "Mubi.com user ID")
 	watchlistCmd := flag.NewFlagSet("watchlist", flag.ExitOnError)
 	watchlistUserId := watchlistCmd.Int64("userid", 0, "Mubi.com user ID")
+	favouriteFilmsCmd := flag.NewFlagSet("favourite-films", flag.ExitOnError)
+	favouriteFilmsUserId := favouriteFilmsCmd.Int64("userid", 0, "Mubi.com user ID")
 
 	if len(os.Args) < 2 {
 		fmt.Println("no subcommand provided")
@@ -32,6 +34,9 @@ func main() {
 	case "watchlist":
 		watchlistCmd.Parse(os.Args[2:])
 		printWatchlist(api, *watchlistUserId)
+	case "favourite-films":
+		favouriteFilmsCmd.Parse(os.Args[2:])
+		printFavouriteFilms(api, *favouriteFilmsUserId)
 	default:
 		fmt.Println("unexpected subcommand provided")
 		os.Exit(1)
@@ -54,6 +59,16 @@ func printWatchlist(api mubi.MubiAPI, userId int64) {
 		fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
 		when := time.Unix(item.Timestamp, 0)
 		fmt.Printf("Added to watchlist on %s\n", when)
+		fmt.Printf("-----\n")
+	}
+}
+
+func printFavouriteFilms(api mubi.MubiAPI, userId int64) {
+	favourites := api.GetFavouriteFilms(userId)
+	for _, fav := range favourites {
+		fmt.Printf("%s (%d) - %s\n", fav.Fannable.Film.Title, fav.Fannable.Film.Year, fav.Fannable.Film.CanonicalUrl)
+		when := time.Unix(fav.Timestamp, 0)
+		fmt.Printf("Added to favourites on %s\n", when)
 		fmt.Printf("-----\n")
 	}
 }

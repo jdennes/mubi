@@ -10,7 +10,7 @@ import (
 
 type WatchlistItem struct {
 	Timestamp int64 `json:"created_at"`
-	Film      Film
+	Film      Film  `json:film`
 }
 
 func (api *MubiAPI) GetWatchlist(userId int64) []WatchlistItem {

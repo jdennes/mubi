@@ -8,14 +8,15 @@ import (
 	"net/http"
 )
 
-type Rating struct {
-	Overall   int   `json:overall`
-	Timestamp int64 `json:"updated_at"`
-	Film      Film  `json:film`
+type FavouriteFilm struct {
+	Timestamp int64 `json:"created_at"`
+	Fannable  struct {
+		Film Film `json:film`
+	} `json:fannable`
 }
 
-func (api *MubiAPI) GetRatings(userId int64) []Rating {
-	url := fmt.Sprintf("https://mubi.com/services/api/ratings?user_id=%d", userId)
+func (api *MubiAPI) GetFavouriteFilms(userId int64) []FavouriteFilm {
+	url := fmt.Sprintf("https://mubi.com/services/api/favourites/films?user_id=%d", userId)
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
@@ -31,11 +32,11 @@ func (api *MubiAPI) GetRatings(userId int64) []Rating {
 		log.Fatal(readErr)
 	}
 
-	ratings := make([]Rating, 0)
-	jsonErr := json.Unmarshal(body, &ratings)
+	favourites := make([]FavouriteFilm, 0)
+	jsonErr := json.Unmarshal(body, &favourites)
 	if jsonErr != nil {
 		log.Fatal(jsonErr)
 	}
 
-	return ratings
+	return favourites
 }
