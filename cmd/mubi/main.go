@@ -50,7 +50,7 @@ func printRatings(api mubi.MubiAPI, userId int64) {
 }
 
 func printWatchlist(api mubi.MubiAPI, userId int64) {
-	watchlist := api.GetWatchlist(userId)
+	watchlist := api.GetWatchlist(userId, 1, 20)
 	for _, item := range watchlist {
 		fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
 		when := time.Unix(item.Timestamp, 0)
