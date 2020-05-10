@@ -4,7 +4,6 @@ import (
 	"flag"
 	"fmt"
 	"github.com/jdennes/mubi"
-	"net/http"
 	"os"
 	"time"
 )
@@ -22,21 +21,18 @@ func main() {
 		os.Exit(1)
 	}
 
-	client := http.Client{
-		Timeout: time.Second * 5,
-	}
-	api := mubi.MubiAPI{&client}
+	api := mubi.NewMubiAPI()
 
 	switch os.Args[1] {
 	case "ratings":
 		ratingsCmd.Parse(os.Args[2:])
-		printRatings(api, *ratingsUserId)
+		printRatings(*api, *ratingsUserId)
 	case "watchlist":
 		watchlistCmd.Parse(os.Args[2:])
-		printWatchlist(api, *watchlistUserId)
+		printWatchlist(*api, *watchlistUserId)
 	case "favourite-films":
 		favouriteFilmsCmd.Parse(os.Args[2:])
-		printFavouriteFilms(api, *favouriteFilmsUserId)
+		printFavouriteFilms(*api, *favouriteFilmsUserId)
 	default:
 		fmt.Println("unexpected subcommand provided")
 		os.Exit(1)
