@@ -18,7 +18,8 @@ func TestGetFavouriteFilms(t *testing.T) {
 	})
 
 	api := MubiAPI{client}
-	favourites := api.GetFavouriteFilms(7995037)
+	userId, page, perPage := int64(7995037), 1, 20
+	favourites := api.GetFavouriteFilms(userId, page, perPage)
 
 	if len(favourites) != 2 {
 		t.Errorf("Number of favourite films was incorrect. Got: %d, expected: %d.", len(favourites), 2)

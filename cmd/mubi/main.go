@@ -60,7 +60,7 @@ func printWatchlist(api mubi.MubiAPI, userId int64) {
 }
 
 func printFavouriteFilms(api mubi.MubiAPI, userId int64) {
-	favourites := api.GetFavouriteFilms(userId)
+	favourites := api.GetFavouriteFilms(userId, 1, 20)
 	for _, fav := range favourites {
 		fmt.Printf("%s (%d) - %s\n", fav.Fannable.Film.Title, fav.Fannable.Film.Year, fav.Fannable.Film.CanonicalUrl)
 		when := time.Unix(fav.Timestamp, 0)
