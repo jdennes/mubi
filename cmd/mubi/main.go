@@ -40,7 +40,7 @@ func main() {
 }
 
 func printRatings(api mubi.MubiAPI, userId int64) {
-	ratings := api.GetRatings(userId)
+	ratings := api.GetRatings(userId, 1, 20)
 	for _, rating := range ratings {
 		fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
 		when := time.Unix(rating.Timestamp, 0)
@@ -50,7 +50,7 @@ func printRatings(api mubi.MubiAPI, userId int64) {
 }
 
 func printWatchlist(api mubi.MubiAPI, userId int64) {
-	watchlist := api.GetWatchlist(userId)
+	watchlist := api.GetWatchlist(userId, 1, 20)
 	for _, item := range watchlist {
 		fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
 		when := time.Unix(item.Timestamp, 0)
@@ -60,7 +60,7 @@ func printWatchlist(api mubi.MubiAPI, userId int64) {
 }
 
 func printFavouriteFilms(api mubi.MubiAPI, userId int64) {
-	favourites := api.GetFavouriteFilms(userId)
+	favourites := api.GetFavouriteFilms(userId, 1, 20)
 	for _, fav := range favourites {
 		fmt.Printf("%s (%d) - %s\n", fav.Fannable.Film.Title, fav.Fannable.Film.Year, fav.Fannable.Film.CanonicalUrl)
 		when := time.Unix(fav.Timestamp, 0)
