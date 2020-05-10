@@ -14,7 +14,8 @@ import (
 
 func main() {
 	api := mubi.NewMubiAPI()
-	ratings := api.GetRatings(7995037)
+	userId := int64(7995037)
+	ratings := api.GetRatings(userId)
 
 	for _, rating := range ratings {
 		fmt.Printf("%s (%d) - Rated %d/5\n", rating.Film.Title, rating.Film.Year, rating.Overall)
