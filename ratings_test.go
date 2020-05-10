@@ -18,7 +18,8 @@ func TestGetRatings(t *testing.T) {
 	})
 
 	api := MubiAPI{client}
-	ratings := api.GetRatings(7995037)
+	userId, page, perPage := int64(7995037), 1, 20
+	ratings := api.GetRatings(userId, page, perPage)
 
 	if len(ratings) != 2 {
 		t.Errorf("Number of ratings was incorrect. Got: %d, expected: %d.", len(ratings), 2)

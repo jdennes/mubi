@@ -14,8 +14,11 @@ type Rating struct {
 	Film      Film  `json:film`
 }
 
-func (api *MubiAPI) GetRatings(userId int64) []Rating {
-	url := fmt.Sprintf("https://mubi.com/services/api/ratings?user_id=%d", userId)
+func (api *MubiAPI) GetRatings(userId int64, page int, perPage int) []Rating {
+	url := fmt.Sprintf(
+		"https://mubi.com/services/api/ratings?user_id=%d&page=%d&per_page=%d",
+		userId, page, perPage,
+	)
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
