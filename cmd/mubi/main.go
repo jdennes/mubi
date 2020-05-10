@@ -44,7 +44,7 @@ func printRatings(api mubi.MubiAPI, userId int64) {
 	for _, rating := range ratings {
 		fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
 		when := time.Unix(rating.Timestamp, 0)
-		fmt.Printf("Rated %d stars on %s\n", rating.Overall, when)
+		fmt.Printf("Rated %d/5 stars on %s\n", rating.Overall, when)
 		fmt.Printf("-----\n")
 	}
 }
