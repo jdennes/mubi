@@ -14,7 +14,10 @@ type WatchlistItem struct {
 }
 
 func (api *MubiAPI) GetWatchlist(userId int64, page int, perPage int) []WatchlistItem {
-	url := fmt.Sprintf("https://mubi.com/services/api/wishes?user_id=%d", userId)
+	url := fmt.Sprintf(
+		"https://mubi.com/services/api/wishes?user_id=%d&page=%d&per_page=%d",
+		userId, page, perPage,
+	)
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
