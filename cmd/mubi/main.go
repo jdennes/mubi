@@ -63,6 +63,13 @@ func printWatchlist(api mubi.MubiAPI, userId int64) {
 	watchlist := api.GetWatchlist(userId, 1, 20)
 	for _, item := range watchlist {
 		fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
+
+		var directorNames []string
+		for _, director := range item.Film.Directors {
+			directorNames = append(directorNames, director.Name)
+		}
+		fmt.Printf("Directed by %s\n", strings.Join(directorNames, ","))
+
 		when := time.Unix(item.Timestamp, 0)
 		fmt.Printf("Added to watchlist on %s\n", when)
 		fmt.Printf("-----\n")
