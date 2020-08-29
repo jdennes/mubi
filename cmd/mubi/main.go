@@ -17,9 +17,13 @@ func main() {
 
 	watchlistCmd := flag.NewFlagSet("watchlist", flag.ExitOnError)
 	watchlistUserId := watchlistCmd.Int64("userid", 0, "Mubi.com user ID")
+	watchlistPage := watchlistCmd.Int("page", 1, "Results page number")
+	watchlistPerPage := watchlistCmd.Int("per-page", 20, "Number of results per page")
 
 	favouriteFilmsCmd := flag.NewFlagSet("favourite-films", flag.ExitOnError)
 	favouriteFilmsUserId := favouriteFilmsCmd.Int64("userid", 0, "Mubi.com user ID")
+	favouriteFilmsPage := favouriteFilmsCmd.Int("page", 1, "Results page number")
+	favouriteFilmsPerPage := favouriteFilmsCmd.Int("per-page", 20, "Number of results per page")
 
 	if len(os.Args) < 2 {
 		fmt.Println("no subcommand provided")
@@ -34,10 +38,10 @@ func main() {
 		printRatings(*api, *ratingsUserId, *ratingsPage, *ratingsPerPage)
 	case "watchlist":
 		watchlistCmd.Parse(os.Args[2:])
-		printWatchlist(*api, *watchlistUserId)
+		printWatchlist(*api, *watchlistUserId, *watchlistPage, *watchlistPerPage)
 	case "favourite-films":
 		favouriteFilmsCmd.Parse(os.Args[2:])
-		printFavouriteFilms(*api, *favouriteFilmsUserId)
+		printFavouriteFilms(*api, *favouriteFilmsUserId, *favouriteFilmsPage, *favouriteFilmsPerPage)
 	default:
 		fmt.Println("unexpected subcommand provided")
 		os.Exit(1)
@@ -61,8 +65,8 @@ func printRatings(api mubi.MubiAPI, userId int64, page int, perPage int) {
 	}
 }
 
-func printWatchlist(api mubi.MubiAPI, userId int64) {
-	watchlist := api.GetWatchlist(userId, 1, 20)
+func printWatchlist(api mubi.MubiAPI, userId int64, page int, perPage int) {
+	watchlist := api.GetWatchlist(userId, page, perPage)
 	for _, item := range watchlist {
 		fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
 
@@ -78,8 +82,8 @@ func printWatchlist(api mubi.MubiAPI, userId int64) {
 	}
 }
 
-func printFavouriteFilms(api mubi.MubiAPI, userId int64) {
-	favourites := api.GetFavouriteFilms(userId, 1, 20)
+func printFavouriteFilms(api mubi.MubiAPI, userId int64, page int, perPage int) {
+	favourites := api.GetFavouriteFilms(userId, page, perPage)
 	for _, fav := range favourites {
 		fmt.Printf("%s (%d) - %s\n", fav.Fannable.Film.Title, fav.Fannable.Film.Year, fav.Fannable.Film.CanonicalUrl)
 
