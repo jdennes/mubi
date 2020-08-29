@@ -51,7 +51,7 @@ func printRatings(api mubi.MubiAPI, userId int64) {
 		for _, director := range rating.Film.Directors {
 			directorNames = append(directorNames, director.Name)
 		}
-		fmt.Printf("Directed by %s\n", strings.Join(directorNames, ","))
+		fmt.Printf("Directed by %s\n", strings.Join(directorNames, ", "))
 
 		when := time.Unix(rating.Timestamp, 0)
 		fmt.Printf("Rated %d/5 stars on %s\n", rating.Overall, when)
@@ -68,7 +68,7 @@ func printWatchlist(api mubi.MubiAPI, userId int64) {
 		for _, director := range item.Film.Directors {
 			directorNames = append(directorNames, director.Name)
 		}
-		fmt.Printf("Directed by %s\n", strings.Join(directorNames, ","))
+		fmt.Printf("Directed by %s\n", strings.Join(directorNames, ", "))
 
 		when := time.Unix(item.Timestamp, 0)
 		fmt.Printf("Added to watchlist on %s\n", when)
@@ -80,6 +80,13 @@ func printFavouriteFilms(api mubi.MubiAPI, userId int64) {
 	favourites := api.GetFavouriteFilms(userId, 1, 20)
 	for _, fav := range favourites {
 		fmt.Printf("%s (%d) - %s\n", fav.Fannable.Film.Title, fav.Fannable.Film.Year, fav.Fannable.Film.CanonicalUrl)
+
+		var directorNames []string
+		for _, director := range fav.Fannable.Film.Directors {
+			directorNames = append(directorNames, director.Name)
+		}
+		fmt.Printf("Directed by %s\n", strings.Join(directorNames, ", "))
+
 		when := time.Unix(fav.Timestamp, 0)
 		fmt.Printf("Added to favourites on %s\n", when)
 		fmt.Printf("-----\n")
