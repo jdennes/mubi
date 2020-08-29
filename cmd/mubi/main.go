@@ -1,10 +1,13 @@
 package main
 
 import (
+	"encoding/csv"
 	"flag"
 	"fmt"
 	"github.com/jdennes/mubi"
+	"log"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -77,7 +80,30 @@ func printRatingsStandard(ratings []mubi.Rating) {
 func printRatingsForLetterboxd(ratings []mubi.Rating) {
 	// Print CSV output for Letterboxd importer as defined here:
 	// https://letterboxd.com/about/importing-data/
-	fmt.Printf("TODO!\n")
+	lines := [][]string{{"Title", "Year", "Directors", "Rating", "WatchedDate"}}
+	for _, rating := range ratings {
+		var directorNames []string
+		for _, director := range rating.Film.Directors {
+			directorNames = append(directorNames, director.Name)
+		}
+		when := time.Unix(rating.Timestamp, 0)
+
+		line := []string{
+			rating.Film.Title,
+			strconv.Itoa(rating.Film.Year),
+			strings.Join(directorNames, ", "),
+			strconv.Itoa(rating.Overall),
+			when.Format("2006-01-02"),
+		}
+		lines = append(lines, line)
+	}
+
+	writer := csv.NewWriter(os.Stdout)
+	writer.WriteAll(lines)
+
+	if err := writer.Error(); err != nil {
+		log.Fatalln("Error writing CSV:", err)
+	}
 }
 
 func printWatchlist(api mubi.MubiAPI, userId int64, page int, perPage int) {
