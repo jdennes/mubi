@@ -5,14 +5,17 @@ import (
 	"fmt"
 	"github.com/jdennes/mubi"
 	"os"
+	"strings"
 	"time"
 )
 
 func main() {
 	ratingsCmd := flag.NewFlagSet("ratings", flag.ExitOnError)
 	ratingsUserId := ratingsCmd.Int64("userid", 0, "Mubi.com user ID")
+
 	watchlistCmd := flag.NewFlagSet("watchlist", flag.ExitOnError)
 	watchlistUserId := watchlistCmd.Int64("userid", 0, "Mubi.com user ID")
+
 	favouriteFilmsCmd := flag.NewFlagSet("favourite-films", flag.ExitOnError)
 	favouriteFilmsUserId := favouriteFilmsCmd.Int64("userid", 0, "Mubi.com user ID")
 
@@ -43,6 +46,13 @@ func printRatings(api mubi.MubiAPI, userId int64) {
 	ratings := api.GetRatings(userId, 1, 20)
 	for _, rating := range ratings {
 		fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
+
+		var directorNames []string
+		for _, director := range rating.Film.Directors {
+			directorNames = append(directorNames, director.Name)
+		}
+		fmt.Printf("Directed by %s\n", strings.Join(directorNames, ","))
+
 		when := time.Unix(rating.Timestamp, 0)
 		fmt.Printf("Rated %d/5 stars on %s\n", rating.Overall, when)
 		fmt.Printf("-----\n")
