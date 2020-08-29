@@ -14,6 +14,7 @@ func main() {
 	ratingsUserId := ratingsCmd.Int64("userid", 0, "Mubi.com user ID")
 	ratingsPage := ratingsCmd.Int("page", 1, "Results page number")
 	ratingsPerPage := ratingsCmd.Int("per-page", 20, "Number of results per page")
+	ratingsExportForLetterboxd := ratingsCmd.Bool("export-for-letterboxd", false, "If true, print output in CSV format for Letterboxd importer")
 
 	watchlistCmd := flag.NewFlagSet("watchlist", flag.ExitOnError)
 	watchlistUserId := watchlistCmd.Int64("userid", 0, "Mubi.com user ID")
@@ -35,7 +36,7 @@ func main() {
 	switch os.Args[1] {
 	case "ratings":
 		ratingsCmd.Parse(os.Args[2:])
-		printRatings(*api, *ratingsUserId, *ratingsPage, *ratingsPerPage)
+		printRatings(*api, *ratingsUserId, *ratingsPage, *ratingsPerPage, *ratingsExportForLetterboxd)
 	case "watchlist":
 		watchlistCmd.Parse(os.Args[2:])
 		printWatchlist(*api, *watchlistUserId, *watchlistPage, *watchlistPerPage)
@@ -48,8 +49,16 @@ func main() {
 	}
 }
 
-func printRatings(api mubi.MubiAPI, userId int64, page int, perPage int) {
+func printRatings(api mubi.MubiAPI, userId int64, page int, perPage int, exportForLetterboxd bool) {
 	ratings := api.GetRatings(userId, page, perPage)
+	if exportForLetterboxd == true {
+		printRatingsForLetterboxd(ratings)
+	} else {
+		printRatingsStandard(ratings)
+	}
+}
+
+func printRatingsStandard(ratings []mubi.Rating) {
 	for _, rating := range ratings {
 		fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
 
@@ -63,6 +72,12 @@ func printRatings(api mubi.MubiAPI, userId int64, page int, perPage int) {
 		fmt.Printf("Rated %d/5 stars on %s\n", rating.Overall, when)
 		fmt.Printf("-----\n")
 	}
+}
+
+func printRatingsForLetterboxd(ratings []mubi.Rating) {
+	// Print CSV output for Letterboxd importer as defined here:
+	// https://letterboxd.com/about/importing-data/
+	fmt.Printf("TODO!\n")
 }
 
 func printWatchlist(api mubi.MubiAPI, userId int64, page int, perPage int) {
