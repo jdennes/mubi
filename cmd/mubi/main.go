@@ -12,6 +12,8 @@ import (
 func main() {
 	ratingsCmd := flag.NewFlagSet("ratings", flag.ExitOnError)
 	ratingsUserId := ratingsCmd.Int64("userid", 0, "Mubi.com user ID")
+	ratingsPage := ratingsCmd.Int("page", 1, "Results page number")
+	ratingsPerPage := ratingsCmd.Int("per-page", 20, "Number of results per page")
 
 	watchlistCmd := flag.NewFlagSet("watchlist", flag.ExitOnError)
 	watchlistUserId := watchlistCmd.Int64("userid", 0, "Mubi.com user ID")
@@ -29,7 +31,7 @@ func main() {
 	switch os.Args[1] {
 	case "ratings":
 		ratingsCmd.Parse(os.Args[2:])
-		printRatings(*api, *ratingsUserId)
+		printRatings(*api, *ratingsUserId, *ratingsPage, *ratingsPerPage)
 	case "watchlist":
 		watchlistCmd.Parse(os.Args[2:])
 		printWatchlist(*api, *watchlistUserId)
@@ -42,8 +44,8 @@ func main() {
 	}
 }
 
-func printRatings(api mubi.MubiAPI, userId int64) {
-	ratings := api.GetRatings(userId, 1, 20)
+func printRatings(api mubi.MubiAPI, userId int64, page int, perPage int) {
+	ratings := api.GetRatings(userId, page, perPage)
 	for _, rating := range ratings {
 		fmt.Printf("%s (%d) - %s\n", rating.Film.Title, rating.Film.Year, rating.Film.CanonicalUrl)
 
