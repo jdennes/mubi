@@ -3,9 +3,7 @@ package mubi
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
-	"net/http"
 )
 
 type WatchlistItem struct {
@@ -19,20 +17,7 @@ func (api *MubiAPI) GetWatchlist(userId int64, page int, perPage int) []Watchlis
 		userId, page, perPage,
 	)
 
-	req, err := http.NewRequest(http.MethodGet, url, nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-	req.Header.Set("User-Agent", "jdennes/mubi")
-	res, getErr := api.Client.Do(req)
-	if getErr != nil {
-		log.Fatal(getErr)
-	}
-	body, readErr := ioutil.ReadAll(res.Body)
-	if readErr != nil {
-		log.Fatal(readErr)
-	}
-
+	body := api.GetResponseBody(url)
 	watchlist := make([]WatchlistItem, 0)
 	jsonErr := json.Unmarshal(body, &watchlist)
 	if jsonErr != nil {

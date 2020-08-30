@@ -3,9 +3,7 @@ package mubi
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
-	"net/http"
 )
 
 type FavouriteFilm struct {
@@ -21,20 +19,7 @@ func (api *MubiAPI) GetFavouriteFilms(userId int64, page int, perPage int) []Fav
 		userId, page, perPage,
 	)
 
-	req, err := http.NewRequest(http.MethodGet, url, nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-	req.Header.Set("User-Agent", "jdennes/mubi")
-	res, getErr := api.Client.Do(req)
-	if getErr != nil {
-		log.Fatal(getErr)
-	}
-	body, readErr := ioutil.ReadAll(res.Body)
-	if readErr != nil {
-		log.Fatal(readErr)
-	}
-
+	body := api.GetResponseBody(url)
 	favourites := make([]FavouriteFilm, 0)
 	jsonErr := json.Unmarshal(body, &favourites)
 	if jsonErr != nil {
