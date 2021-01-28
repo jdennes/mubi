@@ -145,7 +145,7 @@ func printFavouriteFilms(api mubi.MubiAPI, userId int64, page int, perPage int) 
 func printFilmsOfTheDay(api mubi.MubiAPI) {
 	filmsOfTheDay := api.GetFilmsOfTheDay()
 	for _, fotd := range filmsOfTheDay {
-		fmt.Printf("%s (%d)\n", fotd.Film.Title, fotd.Film.Year)
+		fmt.Printf("%s (%d) - %s\n", fotd.Film.Title, fotd.Film.Year, fotd.Film.WebUrl)
 		fmt.Printf("Expires %s\n", fotd.ExpiresAt)
 		fmt.Printf("-----\n")
 	}

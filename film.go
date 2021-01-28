@@ -9,5 +9,6 @@ type Film struct {
 	Title        string     `json:title`
 	Year         int        `json:year`
 	CanonicalUrl string     `json:"canonical_url"`
+	WebUrl       string     `json:"web_url"`
 	Directors    []Director `json:directors`
 }
