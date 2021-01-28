@@ -23,4 +23,12 @@ func TestGetFilmsOfTheDay(t *testing.T) {
 	if len(fotd) != 30 {
 		t.Errorf("Number of films of the day was incorrect. Got: %d, expected: %d.", len(fotd), 30)
 	}
+
+	if fotd[0].Film.Title != "Josep" {
+		t.Errorf("First film title in films of the day was incorrect. Got: %s, expected: %s.", fotd[0].Film.Title, "Josep")
+	}
+
+	if fotd[0].Film.Year != 2020 {
+		t.Errorf("First film year in films of the day was incorrect. Got: %d, expected: %d.", fotd[0].Film.Year, 2020)
+	}
 }
