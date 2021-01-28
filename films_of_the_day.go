@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"github.com/PuerkitoBio/goquery"
 	"log"
-	"net/http"
+	"strings"
 )
 
 // The only way I know how to get a list of the current films of the day is to
@@ -28,15 +28,11 @@ type FilmsOfTheDayData struct {
 }
 
 func (api *MubiAPI) GetFilmsOfTheDay() []FilmOfTheDay {
-	res, requestErr := http.Get("https://mubi.com/film-of-the-day")
-	if requestErr != nil {
-		log.Fatal(requestErr)
-	}
+	body := api.GetResponseBody("https://mubi.com/film-of-the-day")
 
 	// Use the goquery library to find the
 	// <script id="__NEXT_DATA__" ...> element containing the JSON data
-	defer res.Body.Close()
-	doc, loadErr := goquery.NewDocumentFromReader(res.Body)
+	doc, loadErr := goquery.NewDocumentFromReader(strings.NewReader(string(body)))
 	if loadErr != nil {
 		log.Fatal(loadErr)
 	}
