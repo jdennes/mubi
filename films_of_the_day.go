@@ -7,8 +7,8 @@ import (
 	"net/http"
 )
 
-// The only way I know how to get a list of films of the day at the moment is
-// to scrape some JSON out of https://mubi.com/film-of-the-day
+// The only way I know how to get a list of the current films of the day is to
+// scrape some JSON out of https://mubi.com/film-of-the-day
 
 type FilmOfTheDay struct {
 	Id          int    `json:"id"`
@@ -33,13 +33,13 @@ func (api *MubiAPI) GetFilmsOfTheDay() []FilmOfTheDay {
 		log.Fatal(requestErr)
 	}
 
+	// Use the goquery library to find the
+	// <script id="__NEXT_DATA__" ...> element containing the JSON data
 	defer res.Body.Close()
 	doc, loadErr := goquery.NewDocumentFromReader(res.Body)
 	if loadErr != nil {
 		log.Fatal(loadErr)
 	}
-
-	// Find the <script id="__NEXT_DATA__" ...> element containing the JSON
 	element := doc.Find("script[id='__NEXT_DATA__']")
 	jsonContent := element.Text()
 
