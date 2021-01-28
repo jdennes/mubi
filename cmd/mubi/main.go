@@ -46,6 +46,8 @@ func main() {
 	case "favourite-films":
 		favouriteFilmsCmd.Parse(os.Args[2:])
 		printFavouriteFilms(*api, *favouriteFilmsUserId, *favouriteFilmsPage, *favouriteFilmsPerPage)
+	case "films-of-the-day":
+		printFilmsOfTheDay(*api)
 	default:
 		fmt.Println("unexpected subcommand provided")
 		os.Exit(1)
@@ -136,6 +138,15 @@ func printFavouriteFilms(api mubi.MubiAPI, userId int64, page int, perPage int) 
 
 		when := time.Unix(fav.Timestamp, 0)
 		fmt.Printf("Added to favourites on %s\n", when)
+		fmt.Printf("-----\n")
+	}
+}
+
+func printFilmsOfTheDay(api mubi.MubiAPI) {
+	filmsOfTheDay := api.GetFilmsOfTheDay()
+	for _, fotd := range filmsOfTheDay {
+		fmt.Printf("%s (%d) - %s\n", fotd.Film.Title, fotd.Film.Year, fotd.Film.WebUrl)
+		fmt.Printf("Expires %s\n", fotd.ExpiresAt)
 		fmt.Printf("-----\n")
 	}
 }
