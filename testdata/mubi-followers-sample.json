@@ -1,0 +1,602 @@
+[
+  {
+    "id": 6599609,
+    "followee_id": 8803115,
+    "follower_id": 5070807,
+    "created_at": 1623515130,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 5070807,
+      "name": "Ryuu Baron",
+      "canonical_url": "https://mubi.com/users/5070807",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/73878/cache-73878-1614622648/images-large.png?size=150x150",
+      "bio": "i like movies, sort of, but if pictures tell a story i will watch it, either i like it or not, only to see the different aspects of a narrative:mauro.brandao.pt",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/142588/images-small.jpg?1614622752",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6598792,
+    "followee_id": 8803115,
+    "follower_id": 1412806,
+    "created_at": 1622979222,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 1412806,
+      "name": "Filip Klokan",
+      "canonical_url": "https://mubi.com/users/1412806",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/82217/cache-82217-1602848757/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/127031/images-small.jpg?1604507261",
+      "has_payment_method": true,
+      "eligible_for_trial": true,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6596459,
+    "followee_id": 8803115,
+    "follower_id": 21892,
+    "created_at": 1621525600,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 21892,
+      "name": "Severus Snape",
+      "canonical_url": "https://mubi.com/users/21892",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/95948/cache-95948-1620860589/images-large.jpg?size=150x150",
+      "bio": "https://youtu.be/9MaqRpjdptM",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/153948/images-small.jpg?1623608215",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6585425,
+    "followee_id": 8803115,
+    "follower_id": 11015566,
+    "created_at": 1616781916,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 11015566,
+      "name": "MarcoBì",
+      "canonical_url": "https://mubi.com/users/11015566",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/155992/cache-155992-1612616638/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/140921/images-small.jpg?1613396169",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6582015,
+    "followee_id": 8803115,
+    "follower_id": 6765826,
+    "created_at": 1615539322,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6765826,
+      "name": "bernardovazdecastro",
+      "canonical_url": "https://mubi.com/users/6765826",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/101641/cache-101641-1523897989/images-large.jpg?size=150x150",
+      "bio": "Center Stage (1991), Stanley Kwan",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/153536/images-small.jpg?1623234968",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6581907,
+    "followee_id": 8803115,
+    "follower_id": 8802178,
+    "created_at": 1615484464,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 8802178,
+      "name": "Shrekcore",
+      "canonical_url": "https://mubi.com/users/8802178",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/125252/cache-125252-1622320454/images-large.png?size=150x150",
+      "bio": "A thousand Dreams within me softly burn:\nFrom time to time my heart is like some oak\nWhose blood runs golden where a branch is torn. - Rimbaud",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/154621/images-small.png?1624165717",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6581865,
+    "followee_id": 8803115,
+    "follower_id": 259690,
+    "created_at": 1615473278,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 259690,
+      "name": "Danny Bailey",
+      "canonical_url": "https://mubi.com/users/259690",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/18589/cache-18589-1523887341/images-large.jpg?size=150x150",
+      "bio": "Check out my Tumblr blog of film reviews at http://dannyreviews.tumblr.com/",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/125554/images-small.png?1603217871",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6578141,
+    "followee_id": 8803115,
+    "follower_id": 11349916,
+    "created_at": 1614080826,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 11349916,
+      "name": "Satanstango",
+      "canonical_url": "https://mubi.com/users/11349916",
+      "avatar_url": "//mubi.com/assets/placeholders/avatar-2b64b89b674f3bee3279c73763e9588cd01989594c56f2f96da75963e3f41285.png",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": null,
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6575458,
+    "followee_id": 8803115,
+    "follower_id": 1283034,
+    "created_at": 1613141283,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 1283034,
+      "name": "Adam Laurence Pitt",
+      "canonical_url": "https://mubi.com/users/1283034",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/69846/cache-69846-1523894734/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/152800/images-small.jpeg?1622575286",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6574642,
+    "followee_id": 8803115,
+    "follower_id": 6076895,
+    "created_at": 1612777508,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6076895,
+      "name": "Bilouaustria",
+      "canonical_url": "https://mubi.com/users/6076895",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/110322/cache-110322-1523899492/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/46536/images-small.jpg?1457778018",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6572562,
+    "followee_id": 8803115,
+    "follower_id": 9257582,
+    "created_at": 1611815516,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 9257582,
+      "name": "T",
+      "canonical_url": "https://mubi.com/users/9257582",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/130591/cache-130591-1619491713/images-large.png?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/97733/images-small.jpeg?1579621770",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6571710,
+    "followee_id": 8803115,
+    "follower_id": 8300799,
+    "created_at": 1611540406,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 8300799,
+      "name": "Tornasol",
+      "canonical_url": "https://mubi.com/users/8300799",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/117740/cache-117740-1621692844/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/152751/images-small.png?1622519591",
+      "has_payment_method": false,
+      "eligible_for_trial": true,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6571298,
+    "followee_id": 8803115,
+    "follower_id": 7055804,
+    "created_at": 1611413683,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 7055804,
+      "name": "ASHES IN THE HOURGLASS",
+      "canonical_url": "https://mubi.com/users/7055804",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/104004/cache-104004-1523898362/images-large.png?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/50477/images-small.png?1464059262",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6570382,
+    "followee_id": 8803115,
+    "follower_id": 128705,
+    "created_at": 1611011449,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 128705,
+      "name": "Jorge Didaco",
+      "canonical_url": "https://mubi.com/users/128705",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/42936/cache-42936-1309717086/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": null,
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6561023,
+    "followee_id": 8803115,
+    "follower_id": 8710558,
+    "created_at": 1607523487,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 8710558,
+      "name": "Matt R1",
+      "canonical_url": "https://mubi.com/users/8710558",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/123179/cache-123179-1547408383/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/84586/images-small.png?1547656716",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6554727,
+    "followee_id": 8803115,
+    "follower_id": 7708156,
+    "created_at": 1604069408,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 7708156,
+      "name": "Conor McCoy",
+      "canonical_url": "https://mubi.com/users/7708156",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/152109/cache-152109-1604069621/images-large.png?size=150x150",
+      "bio": "misery & hilarity in no particular order",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/126357/images-small.jpg?1604069670",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6551542,
+    "followee_id": 8803115,
+    "follower_id": 9752008,
+    "created_at": 1602175781,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 9752008,
+      "name": "anhedonik",
+      "canonical_url": "https://mubi.com/users/9752008",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/135778/cache-135778-1586627361/images-large.gif?size=150x150",
+      "bio": "* 11. 04. 2020 ",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/104515/images-small.gif?1586627286",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6549240,
+    "followee_id": 8803115,
+    "follower_id": 8168391,
+    "created_at": 1600674954,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 8168391,
+      "name": "Dissipatio",
+      "canonical_url": "https://mubi.com/users/8168391",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/116024/cache-116024-1621257259/images-large.png?size=150x150",
+      "bio": "Too late, too early",
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/129764/images-small.png?1607186944",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6546846,
+    "followee_id": 8803115,
+    "follower_id": 6164674,
+    "created_at": 1599424210,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6542363,
+    "followee_id": 8803115,
+    "follower_id": 10139014,
+    "created_at": 1597350946,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 10139014,
+      "name": "Stefan16",
+      "canonical_url": "https://mubi.com/users/10139014",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/164112/cache-164112-1622487742/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/152660/images-small.jpg?1622479089",
+      "has_payment_method": true,
+      "eligible_for_trial": true,
+      "trialist": false
+    }
+  }
+]
