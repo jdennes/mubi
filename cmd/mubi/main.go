@@ -34,6 +34,11 @@ func main() {
 	followingPage := followingCmd.Int("page", 1, "Results page number")
 	followingPerPage := followingCmd.Int("per-page", 20, "Number of results per page")
 
+	followersCmd := flag.NewFlagSet("followers", flag.ExitOnError)
+	followersUserId := followersCmd.Int64("userid", 0, "Mubi.com user ID")
+	followersPage := followersCmd.Int("page", 1, "Results page number")
+	followersPerPage := followersCmd.Int("per-page", 20, "Number of results per page")
+
 	if len(os.Args) < 2 {
 		fmt.Println("no subcommand provided")
 		os.Exit(1)
@@ -56,6 +61,9 @@ func main() {
 	case "following":
 		followingCmd.Parse(os.Args[2:])
 		printFollowing(*api, *followingUserId, *followingPage, *followingPerPage)
+	case "followers":
+		followersCmd.Parse(os.Args[2:])
+		printFollowers(*api, *followersUserId, *followersPage, *followersPerPage)
 	default:
 		fmt.Println("unexpected subcommand provided")
 		os.Exit(1)
@@ -164,6 +172,17 @@ func printFollowing(api mubi.MubiAPI, userId int64, page int, perPage int) {
 	for _, item := range following {
 		fmt.Printf("%s - %s\n", item.Followee.Name, item.Followee.CanonicalUrl)
 		fmt.Printf("Bio: %s\n", item.Followee.Bio)
+		when := time.Unix(item.CreatedAt, 0)
+		fmt.Printf("Followed on %s\n", when)
+		fmt.Printf("-----\n")
+	}
+}
+
+func printFollowers(api mubi.MubiAPI, userId int64, page int, perPage int) {
+	followers := api.GetFollowers(userId, page, perPage)
+	for _, item := range followers {
+		fmt.Printf("%s - %s\n", item.Follower.Name, item.Follower.CanonicalUrl)
+		fmt.Printf("Bio: %s\n", item.Follower.Bio)
 		when := time.Unix(item.CreatedAt, 0)
 		fmt.Printf("Followed on %s\n", when)
 		fmt.Printf("-----\n")

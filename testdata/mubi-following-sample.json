@@ -1,40 +1,22 @@
 [
   {
-    "id": 6600683,
-    "followee_id": 10856256,
-    "follower_id": 7995037,
-    "created_at": 1624198972,
+    "id": 6602705,
+    "followee_id": 224774,
+    "follower_id": 6164674,
+    "created_at": 1625664563,
     "followee": {
-      "id": 10856256,
-      "name": "Manuel",
-      "canonical_url": "https://mubi.com/users/10856256",
-      "avatar_url": "//mubi.com/assets/placeholders/avatar-2b64b89b674f3bee3279c73763e9588cd01989594c56f2f96da75963e3f41285.png",
-      "bio": null,
-      "subscriber": true,
-      "cover_image_url": null,
+      "id": 224774,
+      "name": "mubianer",
+      "canonical_url": "https://mubi.com/users/224774",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/92093/cache-92093-1523896799/images-large.png?size=150x150",
+      "bio": "I usually mention the format if it's 16/35/70 mm, as it's becoming a rare experience. Otherwise it's DCP or home viewing. 5 stars = masterpiece.",
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/120853/images-small.jpg?1598400597",
       "has_payment_method": true,
-      "eligible_for_trial": false,
+      "eligible_for_trial": true,
       "trialist": false
     },
     "follower": {
-      "id": 7995037,
-      "name": "jdennes",
-      "canonical_url": "https://mubi.com/users/7995037",
-      "avatar_url": "https://images.mubicdn.net/images/avatars/113982/cache-113982-1523900231/images-large.jpg?size=150x150",
-      "bio": null,
-      "subscriber": false,
-      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/80119/images-small.jpg?1535047013",
-      "has_payment_method": true,
-      "eligible_for_trial": false,
-      "trialist": false
-    }
-  },
-  {
-    "id": 6428178,
-    "followee_id": 6164674,
-    "follower_id": 7995037,
-    "created_at": 1569176369,
-    "followee": {
       "id": 6164674,
       "name": "josé neves",
       "canonical_url": "https://mubi.com/users/6164674",
@@ -45,18 +27,576 @@
       "has_payment_method": false,
       "eligible_for_trial": false,
       "trialist": true
+    }
+  },
+  {
+    "id": 6600393,
+    "followee_id": 7366554,
+    "follower_id": 6164674,
+    "created_at": 1624012518,
+    "followee": {
+      "id": 7366554,
+      "name": "RogerTheMovieManiac88",
+      "canonical_url": "https://mubi.com/users/7366554",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/211533/cache-211533-1620942055/images-large.jpeg?size=150x150",
+      "bio": "Film fan... Born 1988... From Westmeath in the midlands of Ireland. Always interested in widening and extending my cinematic horizons.",
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/123017/images-small.jpg?1600289806",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": false
     },
     "follower": {
-      "id": 7995037,
-      "name": "jdennes",
-      "canonical_url": "https://mubi.com/users/7995037",
-      "avatar_url": "https://images.mubicdn.net/images/avatars/113982/cache-113982-1523900231/images-large.jpg?size=150x150",
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6598222,
+    "followee_id": 6807173,
+    "follower_id": 6164674,
+    "created_at": 1622622579,
+    "followee": {
+      "id": 6807173,
+      "name": "dr0nestar",
+      "canonical_url": "https://mubi.com/users/6807173",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/104528/cache-104528-1523898438/images-large.jpg?size=150x150",
       "bio": null,
       "subscriber": false,
-      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/80119/images-small.jpg?1535047013",
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/27976/images-small.jpg?1427835156",
       "has_payment_method": true,
       "eligible_for_trial": false,
       "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6597638,
+    "followee_id": 5554166,
+    "follower_id": 6164674,
+    "created_at": 1622230394,
+    "followee": {
+      "id": 5554166,
+      "name": "Sergei Dyoshin",
+      "canonical_url": "https://mubi.com/users/5554166",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/195615/cache-195615-1623145600/images-large.jpeg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/45500/images-small.png?1456170756",
+      "has_payment_method": false,
+      "eligible_for_trial": true,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6594092,
+    "followee_id": 10133522,
+    "follower_id": 6164674,
+    "created_at": 1620204528,
+    "followee": {
+      "id": 10133522,
+      "name": "Jigsaw Feeling",
+      "canonical_url": "https://mubi.com/users/10133522",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/144469/cache-144469-1615160978/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/143304/images-small.jpg?1615161255",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6593082,
+    "followee_id": 9715532,
+    "follower_id": 6164674,
+    "created_at": 1619770657,
+    "followee": {
+      "id": 9715532,
+      "name": "Saeed Bidar Kahnamuie",
+      "canonical_url": "https://mubi.com/users/9715532",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/285891/cache-285891-1625576204/images-large.jpeg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/125003/images-small.jpg?1602513783",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6585570,
+    "followee_id": 7848206,
+    "follower_id": 6164674,
+    "created_at": 1616836623,
+    "followee": {
+      "id": 7848206,
+      "name": "Jorge Olaya",
+      "canonical_url": "https://mubi.com/users/7848206",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/126492/cache-126492-1563707804/images-large.jpg?size=150x150",
+      "bio": "#SOSColombia",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/150519/images-small.jpg?1620672665",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6583542,
+    "followee_id": 7840977,
+    "follower_id": 6164674,
+    "created_at": 1616005047,
+    "followee": {
+      "id": 7840977,
+      "name": "Leon Blank",
+      "canonical_url": "https://mubi.com/users/7840977",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/124333/cache-124333-1552744918/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/86881/images-small.jpg?1552745037",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6581271,
+    "followee_id": 56483,
+    "follower_id": 6164674,
+    "created_at": 1615159223,
+    "followee": {
+      "id": 56483,
+      "name": "Jose Sarmiento Hinojosa",
+      "canonical_url": "https://mubi.com/users/56483",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/61370/cache-61370-1523893808/images-large.gif?size=150x150",
+      "bio": "@desistfilm Director. Film critic/curator, programmer @MUTA.",
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/15692/images-small.jpg?1411341419",
+      "has_payment_method": true,
+      "eligible_for_trial": true,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6579643,
+    "followee_id": 8802178,
+    "follower_id": 6164674,
+    "created_at": 1614541370,
+    "followee": {
+      "id": 8802178,
+      "name": "Shrekcore",
+      "canonical_url": "https://mubi.com/users/8802178",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/125252/cache-125252-1622320454/images-large.png?size=150x150",
+      "bio": "A thousand Dreams within me softly burn:\nFrom time to time my heart is like some oak\nWhose blood runs golden where a branch is torn. - Rimbaud",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/154621/images-small.png?1624165717",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6579269,
+    "followee_id": 7194393,
+    "follower_id": 6164674,
+    "created_at": 1614382475,
+    "followee": {
+      "id": 7194393,
+      "name": "Yorkie Blue",
+      "canonical_url": "https://mubi.com/users/7194393",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/122281/cache-122281-1579976820/images-large.JPG?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/82958/images-small.jpg?1544126634",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6578021,
+    "followee_id": 6076895,
+    "follower_id": 6164674,
+    "created_at": 1614036846,
+    "followee": {
+      "id": 6076895,
+      "name": "Bilouaustria",
+      "canonical_url": "https://mubi.com/users/6076895",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/110322/cache-110322-1523899492/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/46536/images-small.jpg?1457778018",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6576366,
+    "followee_id": 7356586,
+    "follower_id": 6164674,
+    "created_at": 1613409506,
+    "followee": {
+      "id": 7356586,
+      "name": "sunset baudelard",
+      "canonical_url": "https://mubi.com/users/7356586",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/159982/cache-159982-1617047334/images-large.png?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/149874/images-small.png?1620150150",
+      "has_payment_method": false,
+      "eligible_for_trial": true,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6574693,
+    "followee_id": 4957641,
+    "follower_id": 6164674,
+    "created_at": 1612792195,
+    "followee": {
+      "id": 4957641,
+      "name": "Sina Habibi",
+      "canonical_url": "https://mubi.com/users/4957641",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/122570/cache-122570-1571938637/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/83740/images-small.jpg?1546030650",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6573153,
+    "followee_id": 6911865,
+    "follower_id": 6164674,
+    "created_at": 1612096506,
+    "followee": {
+      "id": 6911865,
+      "name": "Ruiz Buñuel",
+      "canonical_url": "https://mubi.com/users/6911865",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/102825/cache-102825-1523898174/images-large.png?size=150x150",
+      "bio": "Ruiz on KG, no English subs: Medee, Litoral, Edipo, Ahora te vamos a llamar hermano, Petit manuel d'historie de France, Cofralandes I-IV, Edipo, Dias de campo",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/69963/images-small.jpg?1508006006",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6573068,
+    "followee_id": 6538422,
+    "follower_id": 6164674,
+    "created_at": 1612050894,
+    "followee": {
+      "id": 6538422,
+      "name": "Mihai Cristea",
+      "canonical_url": "https://mubi.com/users/6538422",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/98616/cache-98616-1524244020/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/98146/images-small.jpg?1580289917",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6568143,
+    "followee_id": 8817105,
+    "follower_id": 6164674,
+    "created_at": 1610315435,
+    "followee": {
+      "id": 8817105,
+      "name": "thebaus",
+      "canonical_url": "https://mubi.com/users/8817105",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/126268/cache-126268-1562587123/images-large.png?size=150x150",
+      "bio": "Our world, like a charnel-house, lies strewn with the detritus of dead epochs.",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/127138/images-small.png?1604614735",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6565380,
+    "followee_id": 6779491,
+    "follower_id": 6164674,
+    "created_at": 1609540876,
+    "followee": {
+      "id": 6779491,
+      "name": "Aydin KhaliliK",
+      "canonical_url": "https://mubi.com/users/6779491",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/102175/cache-102175-1595262386/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/112902/images-small.jpg?1591508459",
+      "has_payment_method": false,
+      "eligible_for_trial": true,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6561466,
+    "followee_id": 8300799,
+    "follower_id": 6164674,
+    "created_at": 1607770720,
+    "followee": {
+      "id": 8300799,
+      "name": "Tornasol",
+      "canonical_url": "https://mubi.com/users/8300799",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/117740/cache-117740-1621692844/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/152751/images-small.png?1622519591",
+      "has_payment_method": false,
+      "eligible_for_trial": true,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    }
+  },
+  {
+    "id": 6546846,
+    "followee_id": 8803115,
+    "follower_id": 6164674,
+    "created_at": 1599424210,
+    "followee": {
+      "id": 8803115,
+      "name": "Jerro",
+      "canonical_url": "https://mubi.com/users/8803115",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/131095/cache-131095-1619367848/images-large.jpg?size=150x150",
+      "bio": "\"Everyday give yourself a movie.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/148803/images-small.jpg?1619367626",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
     }
   }
 ]
