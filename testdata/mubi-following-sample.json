@@ -1,0 +1,62 @@
+[
+  {
+    "id": 6600683,
+    "followee_id": 10856256,
+    "follower_id": 7995037,
+    "created_at": 1624198972,
+    "followee": {
+      "id": 10856256,
+      "name": "Manuel",
+      "canonical_url": "https://mubi.com/users/10856256",
+      "avatar_url": "//mubi.com/assets/placeholders/avatar-2b64b89b674f3bee3279c73763e9588cd01989594c56f2f96da75963e3f41285.png",
+      "bio": null,
+      "subscriber": true,
+      "cover_image_url": null,
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    },
+    "follower": {
+      "id": 7995037,
+      "name": "jdennes",
+      "canonical_url": "https://mubi.com/users/7995037",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/113982/cache-113982-1523900231/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/80119/images-small.jpg?1535047013",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  },
+  {
+    "id": 6428178,
+    "followee_id": 6164674,
+    "follower_id": 7995037,
+    "created_at": 1569176369,
+    "followee": {
+      "id": 6164674,
+      "name": "josé neves",
+      "canonical_url": "https://mubi.com/users/6164674",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/99745/cache-99745-1599132358/images-large.png?size=150x150",
+      "bio": "\"There was a boy/A very strange enchanted boy\"They say he wandered/very far, very far/Over land and sea/A little shy and sad of eye/But very wise was he.\"",
+      "subscriber": true,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/155375/images-small.png?1624958130",
+      "has_payment_method": false,
+      "eligible_for_trial": false,
+      "trialist": true
+    },
+    "follower": {
+      "id": 7995037,
+      "name": "jdennes",
+      "canonical_url": "https://mubi.com/users/7995037",
+      "avatar_url": "https://images.mubicdn.net/images/avatars/113982/cache-113982-1523900231/images-large.jpg?size=150x150",
+      "bio": null,
+      "subscriber": false,
+      "cover_image_url": "https://assets.mubicdn.net/images/cover_images/80119/images-small.jpg?1535047013",
+      "has_payment_method": true,
+      "eligible_for_trial": false,
+      "trialist": false
+    }
+  }
+]
