@@ -29,6 +29,11 @@ func main() {
 	favouriteFilmsPage := favouriteFilmsCmd.Int("page", 1, "Results page number")
 	favouriteFilmsPerPage := favouriteFilmsCmd.Int("per-page", 20, "Number of results per page")
 
+	followingCmd := flag.NewFlagSet("following", flag.ExitOnError)
+	followingUserId := followingCmd.Int64("userid", 0, "Mubi.com user ID")
+	followingPage := followingCmd.Int("page", 1, "Results page number")
+	followingPerPage := followingCmd.Int("per-page", 20, "Number of results per page")
+
 	if len(os.Args) < 2 {
 		fmt.Println("no subcommand provided")
 		os.Exit(1)
@@ -48,6 +53,9 @@ func main() {
 		printFavouriteFilms(*api, *favouriteFilmsUserId, *favouriteFilmsPage, *favouriteFilmsPerPage)
 	case "films-of-the-day":
 		printFilmsOfTheDay(*api)
+	case "following":
+		followingCmd.Parse(os.Args[2:])
+		printFollowing(*api, *followingUserId, *followingPage, *followingPerPage)
 	default:
 		fmt.Println("unexpected subcommand provided")
 		os.Exit(1)
@@ -147,6 +155,17 @@ func printFilmsOfTheDay(api mubi.MubiAPI) {
 	for _, fotd := range filmsOfTheDay {
 		fmt.Printf("%s (%d) - %s\n", fotd.Film.Title, fotd.Film.Year, fotd.Film.WebUrl)
 		fmt.Printf("Expires %s\n", fotd.ExpiresAt)
+		fmt.Printf("-----\n")
+	}
+}
+
+func printFollowing(api mubi.MubiAPI, userId int64, page int, perPage int) {
+	following := api.GetFollowing(userId, page, perPage)
+	for _, item := range following {
+		fmt.Printf("%s - %s\n", item.Followee.Name, item.Followee.CanonicalUrl)
+		fmt.Printf("Bio: %s\n", item.Followee.Bio)
+		when := time.Unix(item.CreatedAt, 0)
+		fmt.Printf("Followed on %s\n", when)
 		fmt.Printf("-----\n")
 	}
 }
