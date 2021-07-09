@@ -58,3 +58,15 @@ Leviathan,2014,Andrey Zvyagintsev,5,2020-08-19
 Amy,2015,Asif Kapadia,4,2020-08-18
 Hoop Dreams,1994,Steve James,4,2020-08-18
 ```
+
+Building the executable locally:
+
+```
+go build -o ./mubi github.com/jdennes/mubi/cmd/mubi
+```
+
+Running while developing:
+
+```
+go run cmd/mubi/main.go ratings --userid 7995037
+```
