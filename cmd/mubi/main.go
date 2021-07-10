@@ -175,7 +175,7 @@ func printLists(api mubi.MubiAPI, userId int64, page int, perPage int) {
 		}
 		fmt.Printf("%s (%d %s) - %s\n", list.Title, list.ListFilmsCount, filmPlural, list.CanonicalUrl)
 		createdAt := time.Unix(list.CreatedAt, 0)
-		updatedAt := time.Unix(list.CreatedAt, 0)
+		updatedAt := time.Unix(list.UpdatedAt, 0)
 		fmt.Printf("Created on %s\n", createdAt)
 		fmt.Printf("Updated on %s\n", updatedAt)
 		fmt.Printf("-----\n")
