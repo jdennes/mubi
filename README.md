@@ -2,7 +2,16 @@
 
 Do things with https://mubi.com.
 
-Example usage:
+Currently supported things being:
+
+- Get a user's film ratings (https://mubi.com/users/:id)
+- Get a user's watchlist (https://mubi.com/users/:id/watchlist)
+- Get a user's favourite films (https://mubi.com/users/:id/favourites)
+- Get the users a user is following (https://mubi.com/users/:id/following)
+- Get a user's followers (https://mubi.com/users/:id/followers)
+- Get the current list of films of the day (https://mubi.com/film-of-the-day)
+
+Example usage for getting a user's film ratings:
 
 ```go
 package main
@@ -23,7 +32,7 @@ func main() {
 }
 ```
 
-Example command provided:
+Example command provided for getting a user's film ratings:
 
 ```
 $ mubi ratings --userid=7995037 --page=1 --per-page=5
