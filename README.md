@@ -7,6 +7,7 @@ Currently supported things being:
 - Get a user's film ratings (https://mubi.com/users/:id)
 - Get a user's watchlist (https://mubi.com/users/:id/watchlist)
 - Get a user's favourite films (https://mubi.com/users/:id/favourites)
+- Get a user's lists (https://mubi.com/users/:id/lists)
 - Get the users a user is following (https://mubi.com/users/:id/following)
 - Get a user's followers (https://mubi.com/users/:id/followers)
 - Get the current list of films of the day (https://mubi.com/film-of-the-day)
