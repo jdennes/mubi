@@ -9,7 +9,7 @@ import (
 
 func TestGetLiveFilmScreening(t *testing.T) {
 	client := NewTestClient(func(req *http.Request) *http.Response {
-		file, _ := os.Open("testdata/mubi-live-film-sample.html")
+		file, _ := os.Open("testdata/mubi-live-film-sample.json")
 		return &http.Response{
 			StatusCode: 200,
 			Body:       ioutil.NopCloser(file),
