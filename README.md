@@ -11,6 +11,7 @@ Currently supported things being:
 - Get the users a user is following (https://mubi.com/users/:id/following)
 - Get a user's followers (https://mubi.com/users/:id/followers)
 - Get the current list of films of the day (https://mubi.com/film-of-the-day)
+- Get the currently live streaming film (https://mubi.com/live)
 
 Example usage for getting a user's film ratings:
 

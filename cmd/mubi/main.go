@@ -4,12 +4,13 @@ import (
 	"encoding/csv"
 	"flag"
 	"fmt"
-	"github.com/jdennes/mubi"
 	"log"
 	"os"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/jdennes/mubi"
 )
 
 func main() {
@@ -72,6 +73,8 @@ func main() {
 		printFollowers(*api, *followersUserId, *followersPage, *followersPerPage)
 	case "films-of-the-day":
 		printFilmsOfTheDay(*api)
+	case "live":
+		printLiveFilmScreening(*api)
 	default:
 		fmt.Println("unexpected subcommand provided")
 		os.Exit(1)
@@ -211,4 +214,12 @@ func printFilmsOfTheDay(api mubi.MubiAPI) {
 		fmt.Printf("Expires %s\n", fotd.ExpiresAt)
 		fmt.Printf("-----\n")
 	}
+}
+
+func printLiveFilmScreening(api mubi.MubiAPI) {
+	screening := api.GetLiveFilmScreening()
+	fmt.Printf("Now playing at https://mubi.com/live\n\n")
+	fmt.Printf("%s (%d) - %s\n", screening.Film.Title, screening.Film.Year, screening.Film.WebUrl)
+	fmt.Printf("Directed by %s\n", screening.Film.Directors)
+	fmt.Printf("\n%s\n", screening.Description)
 }

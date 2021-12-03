@@ -1,0 +1,106 @@
+{
+  "resume": "true",
+  "film_programming": {
+    "editorial": "French master Claude Chabrol directed this stylish and winding psychological thriller, adapted from a novel by Richard Neely. Darkly comedic, Innocents with Dirty Hands sees Romy Schneider star as a campy femme fatale who is cut off from the outside world but remains strong and vengeful.",
+    "available_on": "2021-11-14",
+    "available_at": "2021-11-13T23:00:00Z",
+    "expires_at": "2021-12-13T23:00:00Z",
+    "hd": false,
+    "exclusive": false,
+    "film_programming_special": null,
+    "reels": [
+      {
+        "id": 11367,
+        "subtitle_language": "German",
+        "audio_language": "French",
+        "credits_roll_at": 7100,
+        "length": 7100,
+        "aspect_ratio": 1.58,
+        "drm": true,
+        "drm_data": {
+          "asset_id": "26209__innocents_fr_de_720x456_10240__c769f4e3ff__6358b04a56",
+          "variant_id": ""
+        },
+        "sidecar_subtitle_languages": []
+      },
+      {
+        "id": 11368,
+        "subtitle_language": null,
+        "audio_language": "German",
+        "credits_roll_at": 7110,
+        "length": 7110,
+        "aspect_ratio": 1.58,
+        "drm": true,
+        "drm_data": {
+          "asset_id": "26209__innocents_de_xx_720x456_10240__514bd9d0d0__7703b15e60",
+          "variant_id": ""
+        },
+        "sidecar_subtitle_languages": []
+      }
+    ],
+    "id": 26209,
+    "title": "Innocents with Dirty Hands",
+    "title_locale": "en",
+    "original_title": "Les innocents aux mains sales",
+    "directors": "Claude Chabrol",
+    "excerpt": "A philandering wife plans to ill her alcoholic husband so she can run away with her lover. The murder goes according to plan until the next morning, when Julie discovers that her lover has disappeared and her husband’s bank account is empty.",
+    "country": "France",
+    "year": 1975,
+    "duration": 120,
+    "age_rating": 16,
+    "stills": {
+      "80": "https://assets.mubicdn.net/images/film/26209/image-w80.jpg?1636048777",
+      "128": "https://assets.mubicdn.net/images/film/26209/image-w128.jpg?1636048777",
+      "160": "https://assets.mubicdn.net/images/film/26209/image-w160.jpg?1636048777",
+      "192": "https://assets.mubicdn.net/images/film/26209/image-w192.jpg?1636048777",
+      "208": "https://assets.mubicdn.net/images/film/26209/image-w208.jpg?1636048777",
+      "256": "https://assets.mubicdn.net/images/film/26209/image-w256.jpg?1636048777",
+      "320": "https://assets.mubicdn.net/images/film/26209/image-w320.jpg?1636048777",
+      "384": "https://assets.mubicdn.net/images/film/26209/image-w384.jpg?1636048777",
+      "448": "https://assets.mubicdn.net/images/film/26209/image-w448.jpg?1636048777",
+      "856": "https://assets.mubicdn.net/images/film/26209/image-w856.jpg?1636048777",
+      "1280": "https://assets.mubicdn.net/images/film/26209/image-w1280.jpg?1636048777",
+      "small": "https://assets.mubicdn.net/images/film/26209/image-w256.jpg?1636048777",
+      "medium": "https://assets.mubicdn.net/images/film/26209/image-w448.jpg?1636048777",
+      "standard": "https://assets.mubicdn.net/images/film/26209/image-w856.jpg?1636048777",
+      "retina": "https://assets.mubicdn.net/images/film/26209/image-w1280.jpg?1636048777"
+    },
+    "still_focal_point": {
+      "x": 0.487465,
+      "y": 0.715347
+    },
+    "average_colour_hex": "BFB498",
+    "trailer_url": "https://trailers.mubicdn.net/26209/t-innocents-with-dirty-hands_en_us_324.914_480_360_1636074924.mp4",
+    "popularity": 62,
+    "web_url": "https://mubi.com/films/innocents-with-dirty-hands",
+    "genres": [
+      "Crime",
+      "Thriller"
+    ],
+    "average_rating": 3.8,
+    "number_of_ratings": 349,
+    "mubi_release": false
+  },
+  "in_pre_reel": false,
+  "in_film": true,
+  "preReelRemaining": 0,
+  "startTime": 5883,
+  "secureUrl": "https://france-edge3.mubicdn.net/watch/09c446277e5f14eb595d143b3a104539/61a9a1ae/mubi-films/26209/innocents_fr_de_720x456_10240/c769f4e3ff/drm_playlist.6358b04a56.ism/default/AVC1.720.mpd",
+  "protocol": null,
+  "reel": {
+    "id": 11367,
+    "subtitle_language": "German",
+    "audio_language": "French",
+    "credits_roll_at": 7100,
+    "length": 7100,
+    "aspect_ratio": 1.58,
+    "drm": true,
+    "drm_data": {
+      "asset_id": "26209__innocents_fr_de_720x456_10240__c769f4e3ff__6358b04a56",
+      "variant_id": ""
+    },
+    "sidecar_subtitle_languages": []
+  },
+  "sidecar_subtitle_language_code": null,
+  "description": "French master Claude Chabrol directed this stylish and winding psychological thriller, adapted from a novel by Richard Neely. Darkly comedic, Innocents with Dirty Hands sees Romy Schneider star as a campy femme fatale who is cut off from the outside world but remains strong and vengeful."
+}
