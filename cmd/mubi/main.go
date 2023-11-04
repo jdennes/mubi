@@ -24,6 +24,7 @@ func main() {
 	watchlistUserId := watchlistCmd.Int64("userid", 0, "Mubi.com user ID")
 	watchlistPage := watchlistCmd.Int("page", 1, "Results page number")
 	watchlistPerPage := watchlistCmd.Int("per-page", 20, "Number of results per page")
+	watchlistExportForLetterboxd := watchlistCmd.Bool("export-for-letterboxd", false, "If true, print output in CSV format for Letterboxd importer")
 
 	favouriteFilmsCmd := flag.NewFlagSet("favourite-films", flag.ExitOnError)
 	favouriteFilmsUserId := favouriteFilmsCmd.Int64("userid", 0, "Mubi.com user ID")
@@ -58,7 +59,7 @@ func main() {
 		printRatings(*api, *ratingsUserId, *ratingsPage, *ratingsPerPage, *ratingsExportForLetterboxd)
 	case "watchlist":
 		watchlistCmd.Parse(os.Args[2:])
-		printWatchlist(*api, *watchlistUserId, *watchlistPage, *watchlistPerPage)
+		printWatchlist(*api, *watchlistUserId, *watchlistPage, *watchlistPerPage, *watchlistExportForLetterboxd)
 	case "favourite-films":
 		favouriteFilmsCmd.Parse(os.Args[2:])
 		printFavouriteFilms(*api, *favouriteFilmsUserId, *favouriteFilmsPage, *favouriteFilmsPerPage)
@@ -135,8 +136,16 @@ func printRatingsForLetterboxd(ratings []mubi.Rating) {
 	}
 }
 
-func printWatchlist(api mubi.MubiAPI, userId int64, page int, perPage int) {
+func printWatchlist(api mubi.MubiAPI, userId int64, page int, perPage int, exportForLetterboxd bool) {
 	watchlist := api.GetWatchlist(userId, page, perPage)
+	if exportForLetterboxd == true {
+		printWatchlistForLetterboxd(watchlist)
+	} else {
+		printWatchlistStandard(watchlist)
+	}
+}
+
+func printWatchlistStandard(watchlist []mubi.WatchlistItem) {
 	for _, item := range watchlist {
 		fmt.Printf("%s (%d) - %s\n", item.Film.Title, item.Film.Year, item.Film.CanonicalUrl)
 
@@ -149,6 +158,30 @@ func printWatchlist(api mubi.MubiAPI, userId int64, page int, perPage int) {
 		when := time.Unix(item.Timestamp, 0)
 		fmt.Printf("Added to watchlist on %s\n", when)
 		fmt.Printf("-----\n")
+	}
+}
+
+func printWatchlistForLetterboxd(watchlist []mubi.WatchlistItem) {
+	lines := [][]string{{"Title", "Year", "Directors"}}
+	for _, item := range watchlist {
+		var directorNames []string
+		for _, director := range item.Film.Directors {
+			directorNames = append(directorNames, director.Name)
+		}
+
+		line := []string{
+			item.Film.Title,
+			strconv.Itoa(item.Film.Year),
+			strings.Join(directorNames, ", "),
+		}
+		lines = append(lines, line)
+	}
+
+	writer := csv.NewWriter(os.Stdout)
+	writer.WriteAll(lines)
+
+	if err := writer.Error(); err != nil {
+		log.Fatalln("Error writing CSV:", err)
 	}
 }
 
